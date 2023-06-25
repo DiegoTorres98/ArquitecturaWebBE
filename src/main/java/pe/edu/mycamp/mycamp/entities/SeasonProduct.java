@@ -19,4 +19,9 @@ public class SeasonProduct {
     private String title;
     @Column(nullable = false)
     private String query;
+
+    public SeasonProduct(String title, String query) {
+        this.title = title;
+        this.query = query;
+    }
 }

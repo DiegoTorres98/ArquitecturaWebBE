@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pe.edu.mycamp.mycamp.entities.SeasonProduct;
 import pe.edu.mycamp.mycamp.repositories.SeasonProductRepository;
+import pe.edu.mycamp.mycamp.services.DepartmentService;
 import pe.edu.mycamp.mycamp.services.SeasonProductService;
 
 import java.util.List;

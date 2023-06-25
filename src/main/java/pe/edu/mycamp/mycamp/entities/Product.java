@@ -31,8 +31,21 @@ public class Product {
     private Double price;
     @Column(nullable = false)
     private String store;
-    @Column(nullable = false, columnDefinition = "DOUBLE DEFAULT 0")
+    @Column(nullable = false)
     private Double total;
-    @Column(nullable = false, columnDefinition = "VARCHAR(255) DEFAULT 'product'")
+    @Column(nullable = false)
     private String type;
+
+    public Product(String department, String name, String products, Double minimumKg, Double amountKg, String reservation, Double price, String store, Double total, String type) {
+        this.department = department;
+        this.name = name;
+        this.products = products;
+        this.minimumKg = minimumKg;
+        this.amountKg = amountKg;
+        this.reservation = reservation;
+        this.price = price;
+        this.store = store;
+        this.total = total;
+        this.type = type;
+    }
 }
